@@ -13,7 +13,12 @@ PACKAGES:
  - toolchain-xtensa32 2.50200.80 (5.2.0)
   
  
- Note：
+Note：
+ESP32 LVGL 天气时钟
+源码地址：https://github.com/algoideas/ESP32-Weather-Clock.git
+软件支持心知天气和和风天气获取天气数据（需要自己申请账号），支持WIFI配网（默认WIFI热点为Clock）
+基于LVGL （Arduino）
+硬件：ESP32 + LCD（ILI9341 SPI屏）
  
  /* 和风天气 - https://dev.heweather.com */
 
