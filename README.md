@@ -14,12 +14,18 @@ PACKAGES:
   
  
  Note：
+ 
  /* 和风天气 - https://dev.heweather.com */
-const char *HEFENG_KEY = "";//和风天气秘钥,替换成自己的秘钥
-const char *HEFENG_LOCATION = "101280306";//城市ID,可到https://where.heweather.com/index.html查询,替换成自己的城市ID
+
+HEFENG_KEY = "";//和风天气秘钥,替换成自己的秘钥
+
+
+HEFENG_LOCATION = "101280306";//城市ID,可到https://where.heweather.com/index.html查询,替换成自己的城市ID
 
 /* 心知天气 - https://www.seniverse.com */
-const char *SENIVERSE_KEY = "";//心知天气秘钥,替换成自己的秘钥
-const char *SENIVERSE_LOCATION = "Huicheng";//城市列表 https://docs.seniverse.com/api/start/start.html,替换成自己的城市名称
+
+SENIVERSE_KEY = "";//心知天气秘钥,替换成自己的秘钥
+
+SENIVERSE_LOCATION = "Huicheng";//城市列表 https://docs.seniverse.com/api/start/start.html,替换成自己的城市名称
 
 
