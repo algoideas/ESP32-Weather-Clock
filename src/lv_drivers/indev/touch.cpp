@@ -49,8 +49,10 @@ static bool touch_read(lv_indev_drv_t * indev_driver, lv_indev_data_t * data)
 
 void Touch::init()
 {
+#if USE_TOUCH
     tc.setCal(481, 3395, 755, 3487, 320, 240, 1);
     tc.setRotation(3);
+#endif
 
     /*Initialize the input device driver*/
     lv_indev_drv_t indev_drv;
