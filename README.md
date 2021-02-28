@@ -12,4 +12,14 @@ PACKAGES:
  - tool-mkspiffs 2.230.0 (2.30)
  - toolchain-xtensa32 2.50200.80 (5.2.0)
   
-  
+ 
+ Note：
+ /* 和风天气 - https://dev.heweather.com */
+const char *HEFENG_KEY = "";//和风天气秘钥,替换成自己的秘钥
+const char *HEFENG_LOCATION = "101280306";//城市ID,可到https://where.heweather.com/index.html查询,替换成自己的城市ID
+
+/* 心知天气 - https://www.seniverse.com */
+const char *SENIVERSE_KEY = "";//心知天气秘钥,替换成自己的秘钥
+const char *SENIVERSE_LOCATION = "Huicheng";//城市列表 https://docs.seniverse.com/api/start/start.html,替换成自己的城市名称
+
+
