@@ -10,7 +10,7 @@ Seniverse::Seniverse() {
 
 void Seniverse::fans(SeniverseCurrentData *data, String id) { 
   std::unique_ptr<WiFiClientSecure>client(new WiFiClientSecure);
-  //client->setInsecure();
+  client->setInsecure();
   HTTPClient https;
   String url = "https://api.bilibili.com/x/relation/stat?vmid=" + id;
   Serial.print("[HTTPS] begin...bilibili\r\n");
@@ -47,7 +47,7 @@ void Seniverse::fans(SeniverseCurrentData *data, String id) {
 void Seniverse::doUpdateCurr(SeniverseCurrentData *data, String key, String location) { 
 
   std::unique_ptr<WiFiClientSecure>client(new WiFiClientSecure);
-  //client->setInsecure();
+  client->setInsecure();
   HTTPClient https;
   String url = "https://api.seniverse.com/v3/weather/now.json?key=" + key + "&location=" + location + "&language=zh-Hans&unit=c";
   Serial.print("[HTTPS] begin...now\r\n");
@@ -106,7 +106,7 @@ void Seniverse::doUpdateCurr(SeniverseCurrentData *data, String key, String loca
 void Seniverse::doUpdateFore(SeniverseForeData *data, String key, String location) { 
 
   std::unique_ptr<WiFiClientSecure>client(new WiFiClientSecure);
-  //client -> setInsecure();
+  client -> setInsecure();
   HTTPClient https;
   String url = "https://api.seniverse.com/v3/weather/daily.json?key=" + key + "&location=" + location + "&language=zh-Hans&unit=c&start=0&days=3";
   Serial.print("[HTTPS] begin...forecast\r\n");

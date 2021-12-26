@@ -65,7 +65,7 @@ void Display::init()
      *  2 - "Portrait Inverted"
      *  3 - "Landscape Inverted"
      */
-    tft.setRotation(3);  
+    tft.setRotation(1);  
     tft.fillScreen(BLACK);
 #else
     uint16_t identifier = 0x0;

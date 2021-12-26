@@ -10,7 +10,7 @@ HeFeng::HeFeng() {
 
 void HeFeng::fans(HeFengCurrentData *data, String id) { 
   std::unique_ptr<WiFiClientSecure>client(new WiFiClientSecure);
-  //client->setInsecure();
+  client->setInsecure();
   HTTPClient https;
   String url = "https://api.bilibili.com/x/relation/stat?vmid=" + id;
   Serial.print("[HTTPS] begin...bilibili\r\n");
@@ -47,7 +47,7 @@ void HeFeng::fans(HeFengCurrentData *data, String id) {
 void HeFeng::doUpdateCurr(HeFengCurrentData *data, String key, String location) { 
 
   std::unique_ptr<WiFiClientSecure>client(new WiFiClientSecure);
-  //client->setInsecure();
+  client->setInsecure();
   HTTPClient https;
   String url = "https://free-api.heweather.net/s6/weather/now?lang=en&location=" + location + "&key=" + key;
   Serial.print("[HTTPS] begin...now\r\n");
@@ -106,7 +106,7 @@ void HeFeng::doUpdateCurr(HeFengCurrentData *data, String key, String location) 
 void HeFeng::doUpdateFore(HeFengForeData *data, String key, String location) { 
 
   std::unique_ptr<WiFiClientSecure>client(new WiFiClientSecure);
-  //client -> setInsecure();
+  client -> setInsecure();
   HTTPClient https;
   String url = "https://free-api.heweather.net/s6/weather/forecast?lang=en&location=" + location + "&key=" + key;
   Serial.print("[HTTPS] begin...forecast\r\n");
