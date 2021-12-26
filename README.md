@@ -13,8 +13,14 @@ PACKAGES:
  - toolchain-xtensa32 2.50200.80 (5.2.0)
   
  
- Note：
- 
+Note：
+
+基于LVGL （Arduino）
+
+硬件：ESP32 + LCD（ILI9341 SPI屏）
+
+支持心知天气和和风天气获取天气数据（需要自己申请账号），支持WIFI配网（默认WIFI热点为Clock）
+
  /* 和风天气 - https://dev.heweather.com */
 
 HEFENG_KEY = "";//和风天气秘钥,替换成自己的秘钥
